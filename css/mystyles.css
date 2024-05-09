@@ -1,0 +1,113 @@
+main, footer {
+    margin-top: 70px;
+}
+
+.bell-block {
+    font-size: 25px;
+    position: relative;
+}
+
+.rounded-circle {
+    width: 40px; 
+    height: 40px;
+}
+
+.notice-circle {
+    position: absolute;
+    top: 0%;
+    right: -9%;
+    width: 10px;
+    height: 10px;
+    background-color: orange; 
+    border-radius: 50%;
+    animation: blink 2s infinite;
+}
+
+a.active {
+    font-weight: bold;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.messageField {
+    background-color: rgb(184, 184, 184);
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: black;
+}
+ 
+.messageTriangle {
+    position: absolute;
+    border-right: 10px solid rgb(184, 184, 184);
+    border-top: 5px solid transparent;
+    border-bottom: 10px solid transparent;
+    left: -7px;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.status {
+    color: rgb(165, 165, 165);
+}
+
+.status.active {
+    color: green;
+}
+
+.pages-menu {
+    font-size: 22px;
+}
+
+.add-edit-button{
+    font-size: 25px;
+}
+
+.delete-students-row-button {
+    font-size: 25px;
+}
+
+.students-table {
+    width: 100%;
+    font-size: 20px;
+}
+
+#dropdown-block {
+    cursor: pointer;
+}
+
+#profile-dropdown {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+}
+
+.dropdown:hover #profile-dropdown {
+    display: block;
+}
+
+#message-dropdown {
+    display: none;
+    width: 500%;
+    left: -100%;
+}
+
+.dropdown:hover #message-dropdown {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    #profile-dropdown {
+        left: -50%;
+    } 
+    .dropdown:hover #message-dropdown {
+        display: none;
+    }
+}
